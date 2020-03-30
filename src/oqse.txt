@@ -1,0 +1,62 @@
+# Copyright 1999-2020 The OpenSSL Project Authors. All Rights Reserved.
+#
+# Licensed under the OpenSSL license (the "License").  You may not use
+# this file except in compliance with the License.  You can obtain a copy
+# in the file LICENSE in the source distribution or at
+# https://www.openssl.org/source/license.html
+
+# Function codes
+OQSE_F_OQSE_ASN1_BITS:100:oqse_asn1_bits
+OQSE_F_OQSE_ASN1_ITEM_SIGN:101:oqse_asn1_item_sign
+OQSE_F_OQSE_ASN1_ITEM_VERIFY:102:oqse_asn1_item_verify
+OQSE_F_OQSE_ASN1_PRIV_DECODE:103:oqse_asn1_priv_decode
+OQSE_F_OQSE_ASN1_PRIV_ENCODE:104:oqse_asn1_priv_encode
+OQSE_F_OQSE_ASN1_PUB_DECODE:105:oqse_asn1_pub_decode
+OQSE_F_OQSE_ASN1_PUB_ENCODE:106:oqse_asn1_pub_encode
+OQSE_F_OQSE_ASN1_SECURITY_BITS:107:oqse_asn1_security_bits
+OQSE_F_OQSE_BIND_HELPER:108:oqse_bind_helper
+OQSE_F_OQSE_GET_SECURITY_BITS:109:oqse_get_security_bits
+OQSE_F_OQSE_KEY_INIT:110:oqse_key_init
+OQSE_F_OQSE_NID2OQS:111:oqse_nid2oqs
+OQSE_F_OQSE_PKEY_AMETHS:112:oqse_pkey_ameths
+OQSE_F_OQSE_PKEY_PMETHS:113:oqse_pkey_pmeths
+OQSE_F_OQSE_PMETH_DIGESTSIGN:114:oqse_pmeth_digestsign
+OQSE_F_OQSE_PMETH_DIGESTVERIFY:115:oqse_pmeth_digestverify
+OQSE_F_OQSE_PMETH_KEYGEN:116:oqse_pmeth_keygen
+OQSE_F_OQSE_PMETH_SIGN:117:oqse_pmeth_sign
+OQSE_F_OQSE_PMETH_VERIFY:118:oqse_pmeth_verify
+OQSE_F_OQSE_REGISTER_NID:119:oqse_register_nid
+OQSE_F_OQSE_REGISTER_NIDS:120:oqse_register_nids
+OQSE_F_OQSE_SIZE:121:oqse_size
+
+#Reason codes
+OQSE_R_ALREADY_REGISTERED:100:already registered
+OQSE_R_BAD_INIT:101:bad init
+OQSE_R_BAD_NID:102:bad nid
+OQSE_R_CALLOC_FAILED:103:calloc failed
+OQSE_R_ENGINE_BIND_AMETH_FAILED:104:engine bind ameth failed
+OQSE_R_ENGINE_BIND_INIT_FAILED:105:engine bind init failed
+OQSE_R_ENGINE_BIND_NAME_FAILED:106:engine bind name failed
+OQSE_R_ENGINE_BIND_PMETH_FAILED:107:engine bind pmeth failed
+OQSE_R_ENGINE_BIND_REGISTER_AMETH_FAILED:108:engine bind register ameth failed
+OQSE_R_ENGINE_BIND_REGISTER_NIDS_FAILED:109:engine bind register nids failed
+OQSE_R_ENGINE_BIND_REGISTER_PMETH_FAILED:110:engine bind register pmeth failed
+OQSE_R_ENGINE_BIND_SET_DESTROY_FAILED:111:engine bind set destroy failed
+OQSE_R_ENGINE_BIND_SET_FAILED:112:engine bind set failed
+OQSE_R_ENGINE_BIND_SET_FINISH_FAILED:113:engine bind set finish failed
+OQSE_R_FAILED_KEYGEN:114:failed keygen
+OQSE_R_FATAL:115:fatal
+OQSE_R_MALLOC_FAIL:116:malloc fail
+OQSE_R_MALLOC_FAILED:117:malloc failed
+OQSE_R_MALLOC_FAILURE:118:malloc failure
+OQSE_R_NID_NOT_FOUND:119:nid not found
+OQSE_R_NID_UNDEF:120:nid undef
+OQSE_R_NO_ALGOR:121:no algor
+OQSE_R_NO_ALG_DATA:122:no alg data
+OQSE_R_NO_DATA:123:no data
+OQSE_R_NO_KEY:124:no key
+OQSE_R_OBJ_CREATE_FAILED:125:obj create failed
+OQSE_R_OBJ_RETRIEVE_FAILED:126:obj retrieve failed
+OQSE_R_QSE_NEW_FAILED:127:qse new failed
+OQSE_R_SIGN_NEW_FAILED:128:sign new failed
+OQSE_R_UNKNOWN_NIST_LEVEL:129:unknown nist level

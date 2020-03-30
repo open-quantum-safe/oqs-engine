@@ -1,0 +1,6 @@
+# CMake
+build
+
+# misc
+*.swp
+tags

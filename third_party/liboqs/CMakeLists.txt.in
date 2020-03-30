@@ -1,0 +1,27 @@
+cmake_minimum_required (VERSION 3.5)
+
+project(liboqs-download NONE)
+
+include(ExternalProject)
+ExternalProject_Add(liboqs
+    GIT_REPOSITORY    https://github.com/open-quantum-safe/liboqs.git
+    GIT_TAG           3c94f3bc7d9d3b9b222d30745f61b69ed5652796
+    SOURCE_DIR        "${CMAKE_CURRENT_BINARY_DIR}/liboqs-src"
+    BINARY_DIR        "${CMAKE_CURRENT_BINARY_DIR}/liboqs-build"
+    CMAKE_ARGS
+        -DCMAKE_BUILD_TYPE=Dependency
+        -DOQS_USE_OPENSSL=OFF
+        -DOQS_ENABLE_KEM_BIKE=OFF
+        -DOQS_ENABLE_KEM_SIKE=OFF
+        -DOQS_ENABLE_KEM_SIDH=OFF
+        -DOQS_ENABLE_KEM_CLASSIC_MCELIECE=OFF
+        -DOQS_ENABLE_KEM_KYBER=OFF
+        -DOQS_ENABLE_KEM_LEDACRYPT=OFF
+        -DOQS_ENABLE_KEM_NEWHOPE=OFF
+        -DOQS_ENABLE_KEM_NTRU=OFF
+        -DOQS_ENABLE_KEM_SABER=OFF
+        -DOQS_ENABLE_KEM_THREEBEARS=OFF
+    INSTALL_COMMAND   ""
+    TEST_COMMAND      ""
+    BUILD_BYPRODUCTS ${CMAKE_CURRENT_BINARY_DIR}/liboqs-build/lib/liboqs.so
+)
