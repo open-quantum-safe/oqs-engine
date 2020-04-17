@@ -143,6 +143,23 @@ static int oqse_register_nids(void)
 }
 
 /**
+* @brief release all memory alloc'd during nid registration
+*
+* @return NONE
+*/
+static void oqse_unregister_nids(void)
+{
+    if (oqse_global)
+        free(oqse_global);
+
+    if (oqse_pkey_meth_nids)
+        free(oqse_pkey_meth_nids);
+
+    if (oqse_pkey_asn1_meth_nids)
+        free(oqse_pkey_asn1_meth_nids);
+}
+
+/**
 * @brief openSSL engine init function
 *
 * @param e - openSSL Engine
@@ -167,7 +184,8 @@ static int oqse_e_destroy(ENGINE *e)
     (void)e;
 
     ERR_unload_OQSE_strings();
-    OBJ_cleanup();
+    oqse_unregister_nids();
+    OBJ_cleanup(); // cleans up openssl internal object table if OBJ_Create is used
     return 1;
 }
 
