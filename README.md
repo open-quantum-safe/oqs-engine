@@ -1,6 +1,12 @@
 oqs-engine
 ======================
 
+---
+
+**NOTE: As of April 2021 we are no longer maintaining oqs-engine due to a lack of new contributors on this project. Our development on dynamic plugging algorithms into OpenSSL will focus on OpenSSL's provider interface via the [oqs-provider sub-project](https://github.com/open-quantum-safe/oqs-provider).**
+
+---
+
 oqs-engine is a C-based [OpenSSL ENGINE](https://github.com/openssl/openssl/blob/master/README.ENGINE) that enables the use of post-quantum digital signature algorithms.
 
 - [Overview](#overview)
